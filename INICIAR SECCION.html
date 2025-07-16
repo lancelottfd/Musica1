@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Styles/css-login.css" rel="stylesheet" type="text/css"/>
+        <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>   
+        
+         <section class="cuadro inicio seccion">
+         <div class="formulario">
+            <h1> Inicio de sesion<br> <img src="../../avanze_wilian/public_html/imagenes/NOTAS MUSICALES.png" width="90" height="50" alt=""/> </h1>
+            <form id="loginForm">
+  <div class="username">
+    <input type="text" name="usuario" required>
+    <label>Nombre de usuario</label>
+  </div>       
+
+  <div class="username">
+    <input type="password" name="contrasena" required>
+    <label>Contraseña</label>
+  </div>
+
+  <div class="recordar"><a href="recuperar contrseña.html">¿Olvidó su contraseña? </a></div>
+  <input type="submit" value="&nbsp;&nbsp;Iniciar&nbsp;&nbsp;">
+
+  <div class="registrarse">
+    <a href="registro.html">Registrarse</a>
+  </div>    
+</form>
+         </div>
+         </section>
+        Línea 1<br>
+        Línea 2
+        Línea 1<br>
+        Línea 2
+  <script src="java/iniciar secion.js" type="text/javascript"></script>
+        
+    </body>
+    <footer class="pie">
+    <p>Dirección: Av. Parra 203, Arequipa</p>
+    <p>Teléfono: 999-999-999</p>
+  </footer>
+    
+</html>
+

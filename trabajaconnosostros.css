@@ -1,0 +1,277 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 jul. 2025, 1:51:18 a. m.
+    Author     : User
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* contenedor */
+.trabaja-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* banner*/
+.banner-section {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.banner-image {
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.banner-image:hover img {
+    transform: scale(1.03);
+}
+
+/* titulo */
+.titulo-formulario {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo-formulario h1 {
+    color: #2c3e50;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-formulario h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+}
+
+.titulo-formulario .subtitulo {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 25px auto 0;
+    line-height: 1.6;
+}
+
+/* formulario*/
+.form-section {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+    background-color: skyblue; /* asegúrate de que sea blanco puro */
+    border: 1px solid #ccc; /* borde más visible */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra más definida */
+}
+
+.form-section h2, 
+.form-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+input:focus, 
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+}
+
+/* horario boton */
+.horarios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 0.95em;
+    color: #555;
+    user-select: none;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: #eee;
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-label .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* boton de envioo*/
+.submit-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+}
+
+.submit-btn:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* pie del formulario */
+.footer-note {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .banner-image {
+        height: 250px;
+    }
+    
+    .titulo-formulario h1 {
+        font-size: 1.8rem;
+    }
+    
+    .titulo-formulario .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .form-section {
+        padding: 20px;
+    }
+    
+    .form-group {
+        min-width: 100%;
+    }
+    
+    .submit-btn {
+        width: 100%;
+    }
+    
+    .form-row {
+        gap: 15px;
+    }
+}

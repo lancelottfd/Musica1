@@ -1,0 +1,107 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 27 may. 2025, 10:27:53 p. m.
+    Author     : nicoc
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(250deg, #363742, #363742);
+    height: 100vh;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #363742;
+}
+.informacion {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 830px;
+    text-align: center;
+}
+.informacion h2, .informacion h3 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.informacion p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.informacion a {
+    color: #222;
+    text-decoration: none;
+}
+button {
+    background-color: #190083;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #10005c;
+}
+.mapa {
+    flex: 1;
+    min-width: 550px;
+}
+.mapa {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; 
+}
+.horarios {
+    background-color: #72737f;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    
+}
+.horarios h2 {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+.columnas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.columnas div {
+    flex: 1;
+    min-width: 200px;
+}
+.columnas h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+}
+.columnas p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}

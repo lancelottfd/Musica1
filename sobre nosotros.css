@@ -1,0 +1,111 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 27 may. 2025, 9:19:58 p. m.
+    Author     : User
+*/
+/* ESTILOS PARA EL BANNER */
+.banner-negro {
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado horizontal */
+    padding: 50px 20px; /* Espaciado interno (50px arriba/abajo, 20px izquierda/derecha) */
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 0 auto 30px; /* Centrado con margen inferior */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra sutil */
+}
+
+.titulo-principal {
+    font-size: 48px; /* Tamaño grande */
+    font-style: italic; /* Texto en cursiva */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 15px; /* Espacio debajo */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.eslogan {
+    font-size: 28px; /* Tamaño mediano-grande */
+    color: #ffcc00; /* Amarillo mostaza */
+    text-transform: uppercase; /* MAYÚSCULAS */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: bold; /* Negrita */
+}
+
+/* ESTILOS PARA EL CONTENIDO PRINCIPAL */
+.contenido-principal {
+    display: flex; /* Diseño flexible */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado */
+    padding: 0 20px; /* Espaciado lateral */
+    gap: 40px; /* Espacio entre columnas */
+}
+
+.texto-container {
+    flex: 1; /* Ocupa espacio disponible */
+    max-width: 50%; /* Máximo 50% del contenedor */
+    padding-right: 20px; /* Espaciado derecho */
+}
+
+.video-container {
+    flex: 1; /* Ocupa espacio disponible */
+    max-width: 80%; /* Máximo 50% del contenedor */
+}
+
+video {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura proporcional */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+/* ESTILOS DE TEXTO */
+h1 {
+    color: #2c3e50; /* Azul oscuro */
+    border-bottom: 2px solid #3498db; /* Línea decorativa inferior */
+    padding-bottom: 10px; /* Espacio bajo el título */
+    font-size: 28px; /* Tamaño grande */
+    margin-top: 0; /* Elimina margen superior por defecto */
+}
+
+h2 {
+    color: #3498db; /* Azul */
+    font-size: 22px; /* Tamaño mediano-grande */
+    margin-top: 25px; /* Espacio superior */
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: center; /* Texto justificado */
+}
+
+.destacado {
+    font-weight: bold; /* Negrita */
+    color: #e74c3c; /* Rojo */
+}
+
+/* RESPONSIVO - Adaptación a móviles */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column; /* Apila elementos */
+    }
+    
+    .texto-container, 
+    .video-container {
+        max-width: 100%; /* Ocupa todo el ancho */
+        padding-right: 0; /* Elimina espaciado derecho */
+    }
+    
+    .banner-negro {
+        padding: 30px 15px; /* Menos espaciado */
+    }
+    
+    .titulo-principal {
+        font-size: 36px; /* Tamaño menor */
+    }
+    
+    .eslogan {
+        font-size: 22px; /* Tamaño menor */
+    }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profesores - Música para todos</title>
+    <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+    <link href="Styles/AprendeATocar.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>   
+    
+    
+    <section class="profesores">
+        <h2>Conoce a nuestros profesores</h2>
+        <div class="profesores-grid">
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE1.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Martín Ríos</h3>
+                        <p>Especialidad: <br>Guitarra Acústica Fender</p>
+                        <a href="FormularioProfesor.html?nombre=Martin+Rios" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE2.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Lucio Paredes</h3>
+                        <p>Especialidad: <br>Guitarra Eléctrica Ibanez</p>
+                        <a href="FormularioProfesor.html?nombre=Lucio+Paredes" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE3.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Fernando Soto</h3>
+                        <p>Especialidad: <br>Guitarra Eléctrica Semihueca</p>
+                        <a href="FormularioProfesor.html?nombre=Fernando+Soto" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE4.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Ana Velarde</h3>
+                        <p>Especialidad: <br>Guitarra Eléctrica Telecaster</p>
+                        <a href="FormularioProfesor.html?nombre=Ana+Velarde" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE5.jpeg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Amanda Ortiz</h3>
+                        <p>Especialidad: <br>Bajo eléctrico</p>
+                        <a href="FormularioProfesor.html?nombre=Amanda+Ortiz" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE6.jpeg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Julia Casanova</h3>
+                        <p>Especialidad:<br> Bajo acústico</p>
+                        <a href="FormularioProfesor.html?nombre=Julia+Casanova" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE7.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Marco Fabregas</h3>
+                        <p>Especialidad:<br> Bajo fretless</p>
+                        <a href="FormularioProfesor.html?nombre=Marco+Fabregas" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE8.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Carlos Mora</h3>
+                        <p>Especialidad:<br>Bajo de 5 cuerdas</p>
+                        <a href="FormularioProfesor.html?nombre=Carlos+Mora" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE9.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Franchesco Palma</h3>
+                        <p>Especialidad:<br> Batería electrónica</p>
+                        <a href="FormularioProfesor.html?nombre=Franchesco+Palma" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE10.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Nataly Zevallos</h3>
+                        <p>Especialidad:<br> Batería jazz</p>
+                        <a href="FormularioProfesor.html?nombre=Nataly+Zevallos" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE11.jpeg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Rosa Flores</h3>
+                        <p>Especialidad:<br> Batería de doble bombo</p>
+                        <a href="FormularioProfesor.html?nombre=Rosa+Flores" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE12.jpeg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Emilio Puma</h3>
+                        <p>Especialidad:<br> Batería hibrida</p>
+                        <a href="FormularioProfesor.html?nombre=Emilio+Puma" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE13.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Vaneza Quintanilla</h3>
+                        <p>Especialidad:<br> Piano de cola</p>
+                        <a href="FormularioProfesor.html?nombre=Vaneza+Quintanilla" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE14.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Ramon Costa</h3>
+                        <p>Especialidad:<br> Piano Digital</p>
+                        <a href="FormularioProfesor.html?nombre=Ramon+Costa" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE15.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Milagros Rodriguez</h3>
+                        <p>Especialidad:<br> Piano Hibrido</p>
+                        <a href="FormularioProfesor.html?nombre=Milagros+Rodriguez" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profesor-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="imagenes/APRENDE16.jpg" alt=""/>
+                    </div>
+                    <div class="card-back">
+                        <h3>Federico Salazar</h3>
+                        <p>Especialidad:<br> Piano Sintetizador</p>
+                        <a href="FormularioProfesor.html?nombre=Federico+Salazar" class="btn-profesor">Escoger profesor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pie">
+          <p>Dirección: Av. Parra 203, Arequipa</p>
+          <p>Teléfono: 999-999-999</p>
+  </footer>
+    <script src="java/AprendeATocar.js" type="text/javascript"></script>
+</body>
+</html>

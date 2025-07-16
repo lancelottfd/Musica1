@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Styles/inicio.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="Styles/inicio.css" type="text/css">
+        <link href="Styles/sobre nosotros.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class="Encabezado">
+                <div class="logo">Musica para todos
+                    <img class="imagen" src="imagenes/logo.jpg">
+                </div> 
+                <div class="unir_carrito">
+                    <!-- 🔍 BARRA DE BÚSQUEDA FUNCIONAL CON REDIRECCIÓN -->
+                    <form id="formBusqueda" onsubmit="redirigir(); return false;">
+                        <input type="text" id="buscador" placeholder="¿Qué estás buscando?" />
+                        <button type="submit">Buscar</button>
+                    </form>
+
+                    <a href="carrito.html" class="carrito">🛒 Carrito de compras
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="contador-carrito">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <a href="inicio.html">Inicio</a>
+                <div class="dropdown">
+                    <a href="#Categorias" class="dropbtn">Categorías▼</a>
+                    <div class="dropdown-content">
+                        <a href="GUITARRAS.html">Guitarras</a>
+                        <a href="BAJOS.html">Bajos</a>
+                        <a href="BATERIA.html">Baterías</a>
+                        <a href="PIANOS.html">Teclados</a>
+                        <a href="accesorios.html">Accesorios</a>
+                    </div>
+                </div>
+                <a href="INICIAR SECCION.html">Iniciar Sesion</a>
+                <a href="soporte.html">Contacto y Soporte</a>
+                <a href="sobre nosotros.html">Sobre Nosotros</a>
+                <a href="trabaja con nosostros.html">Trabaja con Nosotros</a>
+                <a href="AprenderATocar.html">Profesores</a>
+            </nav>
+        </div>
+        <div class="marquesina">
+            ¡Descuento del 20% en los 2 primeros productos comprados! 🎶 
+        </div>
+    </header>          
+
+        <div class="banner-negro">
+            <div class="titulo-principal">Música para todos</div>
+            <div class="eslogan">¡Todos pueden tocar!</div>
+        </div>
+        
+        <!-- Contenido principal (texto + video) -->
+        <div class="contenido-principal">
+            <div class="texto-container">
+                <h1>Música para Todos</h1>
+                <p><span class="destacado">Música para Todos</span> es una tienda virtual de instrumentos musicales fundada en Arequipa, Perú, en 2025 por tres amigos universitarios: Bruno, Hyrbin y Wilian. Amantes de la música clásica y el rock en español, crearon esta empresa con el objetivo de ofrecer instrumentos de calidad a precios accesibles, fomentando el amor por la música en personas de todas las edades.</p>
+                
+                <h2>Misión</h2>
+                <p>Facilitar el acceso a instrumentos musicales de calidad para todos, promoviendo la educación y la pasión por la música a través de una experiencia de compra accesible, confiable y cercana.</p>
+                
+                <h2>Visión</h2>
+                <p>Convertirse en la tienda de instrumentos musicales más reconocida del sur del Perú, impulsando una comunidad musical diversa y fomentando el desarrollo artístico desde casa.</p>
+            </div>
+            
+            <div class="video-container">
+                <video controls>
+                    <source src="Videos/Nosotros.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+        <footer class="pie">
+          <p>Dirección: Av. Parra 203, Arequipa</p>
+          <p>Teléfono: 999-999-999</p>
+  </footer>
+    </body>
+</html>
